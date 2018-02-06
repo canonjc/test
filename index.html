@@ -1,12 +1,24 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>  sample web application </title>
-</head>
-<body>
+   <head>
+      <style>
+         blink {
+           color:red;
+           -webkit-animation: blink 1s step-end infinite;
+           animation: blink 1s step-end infinite
+         }
+ 
+          @-webkit-keyframes blink {
+          67% { opacity: 0 }
+         }
+ 
+         @keyframes blink {
+         67% { opacity: 0 }
+        }
+      </style>
+   </head>
 
-Test demo  ---PROD environment
-<h1>blink element</h1>
-<blink>Blinking Text!!!</blink>
-
-</body>
+   <body>
+       <blink>Blinking Text!!!</blink>
+   </body>
 </html>
